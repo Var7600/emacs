@@ -8,6 +8,10 @@
 ;;Set up the visible bell
 (setq visible-bell t)
 
+;;change font
+(add-to-list 'default-frame-alist
+		'(font ."DejaVu Sans Mono-14"))
+
 (load-theme 'tango-dark) ;theme
 
 ;;Initialize package sources
