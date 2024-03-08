@@ -40,6 +40,9 @@
         eshell-hist-ignoredups t
         eshell-scroll-to-bottom-on-input t)
 
-
+(require 'vhdl-ext)
+(vhdl-ext-mode-setup)
+(vhdl-ext-eglot-set-server 've-ghdl-ls) ;`eglot' config
+(vhdl-ext-lsp-set-server 've-ghdl-ls)   ; `lsp' config
 
 
