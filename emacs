@@ -17,6 +17,9 @@
 
 (load-theme 'tango-dark) ;theme
 
+;;no buffer kill confirmation
+(setq confirm-kill-buffer nil)
+
 ;;Initialize package sources
 (require 'package)
 
