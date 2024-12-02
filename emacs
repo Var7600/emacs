@@ -8,6 +8,9 @@
 ;;Set up the visible bell
 (setq visible-bell t)
 
+;; enable line numbers
+(global-display-line-numbers-mode 1)
+
 ;;change font
 (add-to-list 'default-frame-alist
 		'(font ."DejaVu Sans Mono-14"))
