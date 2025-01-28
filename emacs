@@ -1,4 +1,4 @@
-;;no strat up message
+;;;no strat up message
 (setq inhibit-startup-message t)
 
 (scroll-bar-mode -1) ;Disable visible scrollbar
@@ -46,11 +46,12 @@
   (kill-line)
   (yank)
   (open-line 1)
-  (next-line 1)
+  (forward-line 1)
   (yank)
 )
 (global-set-key (kbd "C-d") 'duplicate-line)
 
-;; syntax highlighting for bats
-(require 'bats-mode)
 
+(use-package flycheck
+ :ensure t
+ :init (global-flycheck-mode))
