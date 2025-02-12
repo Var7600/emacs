@@ -55,3 +55,6 @@
 (use-package flycheck
  :ensure t
  :init (global-flycheck-mode))
+
+(global-set-key "\C-l" 'goto-line)
+  (add-hook 'find-file-hook (lambda () (display-line-numbers-mode 1)))
