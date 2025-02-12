@@ -1,3 +1,7 @@
+(add-to-list 'default-frame-alist '(width . 100)) ;; width  window to 100 characters.
+(add-to-list 'default-frame-alist '(height . 40)) ;; height window to 40 lines.
+
+
 ;;;no strat up message
 (setq inhibit-startup-message t)
 
